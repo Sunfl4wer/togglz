@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /app
+
+spring:
+  data:
+    mongo:
+      user: test
+      password: poc@123456
+      uri: mongodb://localhost:27017/password-app
+
+togglz:
+  console:
+    enabled: true # enable console
+    path: /togglz-console # api path for console
+    use-management-port: false # use application context path instead of togglz path
